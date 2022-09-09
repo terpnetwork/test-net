@@ -2,36 +2,29 @@
 
 This testnet will start at the patched version of Terp-Core (`v0.1.0`). You will need to use the distributed binary from the Terp Network packages repository.
 
-## If you are reusing a testnet box, do this first
-
-1. Stop your node
-2. Reset `terp unsafe-reset-all`
-3. Remove .cht `sudo rm -r .cht/`
-
-
 **Genesis File**
 
 [Genesis File](/athena-1/genesis.json):
 
 ```bash
-   curl -s  TBD > ~/.terp/config/genesis.json
+   curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-1/genesis.json > ~/.terp/config/genesis.json
 ```
 
 **Genesis sha256**
 
 ```bash
 sha256sum ~/.terp/config/genesis.json
-# TBD
+# 322951ef73713c550fcc70e312cb2d67c58b85d2870961f982ede7dd0447162d
 ```
 
 **terpd version**
 
 ```bash
 $ terpd version --long
-name: Terp Cre
+name: Terp Core
 server_name: terpd
 version: v0.1.0
-commit: TBD
+commit: 9ef3e1eada1f06509aa223e64a2380b55aaa3bca
 build_tags: netgo muslc, # THIS BIT IS KEY
 ```
 

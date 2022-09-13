@@ -31,13 +31,14 @@ build_tags: netgo muslc, # THIS BIT IS KEY
 **Seed nodes**
 
 ```
-
+7e5c0b9384a1b9636f1c670d5dc91ba4721ab1ca@23.88.53.28:36656
 ```
 
 **Persistent Peers**
 
 ```
-TBD
+9cf4fc01e035182688a893d6f6c4687cb59d603d@138.201.200.159:11503
+7e5c0b9384a1b9636f1c670d5dc91ba4721ab1ca@23.88.53.28:36656
 ```
 
 ## Setup

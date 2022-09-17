@@ -4,7 +4,7 @@ This testnet will start at the patched version of Terp-Core (`v0.1.0`). You will
 
 **Genesis File**
 
-[Genesis File](/athena-1/genesis.json):
+[Genesis File](https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-1/genesis.json):
 
 ```bash
    curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-1/genesis.json > ~/.terp/config/genesis.json

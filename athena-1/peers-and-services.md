@@ -6,14 +6,15 @@ persistent peers from our most valuable users.
 We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_peers*** that we can use. It is greatly appreciated!
 
 # Persistent_peers
-* TBD 
+* 7e5c0b9384a1b9636f1c670d5dc91ba4721ab1ca@23.88.53.28:36656
+* 
 
 # Seeds
 * TBD
 
 # Snapshots
 ## HighStakes
-* TBD
+* [TBD](https://tools.highstakes.ch/snapshots/terp)
 
 # StateSync Servers and instructions:
 
@@ -75,8 +76,8 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
   "apis": {
     "rpc": [
     {
-        "address": "",
-        "provider": ""
+        "address": "23.88.53.28:36657",
+        "provider": "HighStakes"
     },
    {
         "address": "",
@@ -85,8 +86,8 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
     ],
     "grpc": [
     {
-        "address": "",
-        "provider": ""
+        "address": "23.88.53.28:36090",
+        "provider": "HighStakes"
     }
       ],
     "rest": [

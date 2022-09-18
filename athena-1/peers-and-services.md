@@ -10,7 +10,8 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
 * 
 
 # Seeds
-* TBD
+* 9cf4fc01e035182688a893d6f6c4687cb59d603d@138.201.200.159:11503 
+* 
 
 # Snapshots
 * [High-Stakes](https://tools.highstakes.ch/snapshots/terp)

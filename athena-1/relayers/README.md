@@ -10,7 +10,7 @@ To enable transfers of the CHT & CGAS token between various cosmos blockchains, 
 
 | <p>host</p><p>project name</p> | <p>host</p><p>chain-id</p> | <p>host </p><p>channel</p> | <p>athena-1</p><p>channel</p> | <p>CHT Token<br>IBC address on host network</p>                     | <p>CGAS Token<br>IBC address on host network</p> 
 | -------- | -------------------------- | -------------------------- | --------------------------- | -------------------------------------------------------------------- | ----------------- | 
-| Chronic Network | morocco-1          | channel-2                        | channel-0                   | ibc/TBD | ibc/TBD |
+| Chronic Network | morocco-1          | channel-2                        | channel-0                   | ibc/C1480733E861CF816540E7F7B2807AC44CD9E3DE39B4CD09A357254731538A7E | ibc/8C1AF6C95980C3762E1ADFCA64F9C50C1A436FF482865FD7EE2F81ADF993340B|
 
 
 

@@ -6,9 +6,10 @@
 
 ## Step 2: Obtain your Terp Network wallet address
 
-This will be located in the beta support tab of keplr wallet once succesfully connected to an application on the test-net [Link](TBD).
- 
 
+This will be located in the beta support tab of keplr wallet once succesfully connected to an application on the test-net [Link](https://terp-explorer.vercel.app/wallet/import).
+
+Note that you will need to specify `Terp Chain` when selecting the various networks for keplr to connect to. All private keys & sentitive information is not shared with the vercel app. 
 
 ## Step 3: Obtain the IBC channel id
 

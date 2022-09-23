@@ -51,26 +51,7 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
         "address": "",
         "provider": ""
       },
-       {
-        "id": "",
-        "address": "",
-        "provider": ""
-      },
-       {
-        "id": "",
-        "address": "",
-        "provider": ""
-      },
-       {
-        "id": "",
-        "address": "",
-        "provider": ""
-      },
-       {
-        "id": "",
-        "address": "",
-        "provider": ""
-      }
+       
     ]
   },
   "apis": {
@@ -80,8 +61,8 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
         "provider": "HighStakes"
     },
    {
-        "address": "",
-        "provider": ""
+        "address": "https://rpc-terp.zenchainlabs.io/",
+        "provider": "Zenchain Labs"
     }
     ],
     "grpc": [
@@ -92,8 +73,8 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
       ],
     "rest": [
     {
-        "address": "",
-        "provider": ""
+        "address": "https://api-terp.zenchainlabs.io/",
+        "provider": "Zenchain Labs"
     },
    {
         "address": "",

@@ -63,6 +63,10 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
    {
         "address": "https://rpc-terp.zenchainlabs.io/",
         "provider": "Zenchain Labs"
+    },
+    {
+        "address": "https://terp-rpc.skynetvalidators.com/",
+        "provider": "Skynet Validators"
     }
     ],
     "grpc": [
@@ -77,8 +81,8 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
         "provider": "Zenchain Labs"
     },
    {
-        "address": "",
-        "provider": ""
+        "address": "https://terp-api.skynetvalidators.com",
+        "provider": "skynet validators"
     },
     ]
   }

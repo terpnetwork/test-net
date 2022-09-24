@@ -38,21 +38,8 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
 [# RPCs, LCD, GRPC and other endpoints/services](/peers_seeds_and_services.md) 
 ```
   "peers": {
-    "seeds": [
-      {
-        "id": ""
-        "address": "",
-        "provider": ""
-      }
-    ]
-    "persistent_peers": [
-      {
-        "id": "",
-        "address": "",
-        "provider": ""
-      },
-       
-    ]
+    "seeds": []
+    "persistent_peers": []
   },
   "apis": {
     "rpc": [
@@ -60,7 +47,7 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
         "address": "23.88.53.28:36657",
         "provider": "HighStakes"
     },
-   {
+    {
         "address": "https://rpc-terp.zenchainlabs.io/",
         "provider": "Zenchain Labs"
     },
@@ -80,7 +67,7 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
         "address": "https://api-terp.zenchainlabs.io/",
         "provider": "Zenchain Labs"
     },
-   {
+    {
         "address": "https://terp-api.skynetvalidators.com",
         "provider": "skynet validators"
     },

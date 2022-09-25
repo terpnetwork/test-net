@@ -7,7 +7,7 @@ This testnet will start at the patched version of Terp-Core (`v0.1.0`). You will
 [Genesis File](https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-1/genesis.json):
 
 ```bash
-   curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-1/genesis.json > ~/.terp/config/genesis.json
+curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-1/genesis.json > ~/.terp/config/genesis.json
 ```
 
 **Genesis sha256**
@@ -31,13 +31,13 @@ build_tags: netgo muslc, # THIS BIT IS KEY
 **Seed nodes**
 
 ```
-9cf4fc01e035182688a893d6f6c4687cb59d603d@138.201.200.159:11503
+5a6f4f80c7a29055028fc503216a1539594ad33f@89.111.15.146:11513
 ```
 
 **Persistent Peers**
 
 ```
-
+a24cbc18af3f3558719e2f479ff412f60e126683@181.41.142.78:11503
 7e5c0b9384a1b9636f1c670d5dc91ba4721ab1ca@23.88.53.28:36656
 ```
 

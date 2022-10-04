@@ -9,7 +9,7 @@ Code-Id,Lable
 8,cw_names_registry.wasm
 9,cw_native_staked_balance_voting.wasm
 10,cw_proposal_multiple.wasm
-11,cw_proposal_single.wasm
+17,cw_proposal_single.wasm
 12,cw_token_swap.wasm
 13,stake_cw20_external_rewards.wasm
 14,stake_cw20_reward_distributor.wasm

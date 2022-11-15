@@ -14,7 +14,12 @@ curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/
 
 ```bash
 sha256sum ~/.terp/config/genesis.json
-# TBD
+# b2acc7ba63b05f5653578b05fc5322920635b35a19691dbafd41ef6374b1bc9a
+```
+or
+```bash
+jq -S -c -M '' ~/.terp/config/genesis.json | sha256sum
+# 8fe05de88ef9f3eb016ae19a559369fcb0fdf1aa9a27219bb20b26ccc70f8697 
 ```
 
 **terpd version**

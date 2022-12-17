@@ -72,13 +72,13 @@ __Note__: It is assumed you are currently operating a full-node running v0.1.2 o
 
 5. Download Genesis file for 0.2.0
   ```bash
-  curl https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/0.2.0/genesis.json > ~/.terp/config/genesis.json
+  curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/0.2.0/genesis.json > ~/.terp/config/genesis.json
   ```
 
 6. Start terpd and confirm stops on blockheght udpdate, if you removed .terp you gona see a lot of errors tring to match headers of blocks with version 0.2.0. 
    Because of this is extremly important backup your validator files included .terp to restore at 0.1.2. 
 
-   ```bash
+  ```bash
   terpd start
   ```
 

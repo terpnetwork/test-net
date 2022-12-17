@@ -42,7 +42,7 @@ __Note__: It is assumed you are currently operating a full-node running v0.1.2 o
    0.1.2
    ```
 
-2. Stop your service when reached UPGRADE BLOCK:
+2. Stop your service when reached __1,497,396__:
 
    ```bash
    terpd stop

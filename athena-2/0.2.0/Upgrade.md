@@ -53,10 +53,10 @@ __Note__: It is assumed you are currently operating a full-node running v0.1.2 o
 3. Upgrade binary to 0.2.0
    
    ```bash
-   cd terp-core && git checkout v0.2.0
+   cd terp-core && git pull && git checkout v0.2.0
    make install
    ```
- __NOTE__: If checkout not found v0.2.0 remove terp-core, download it again and repeat step 3(Olny terp-core not .terp).
+ __NOTE__: If checkout not found v0.2.0 remove terp-core, download it again and repeat step 3 (only terp-core not .terp).
  
    ```bash
    rm -r terp-core
@@ -75,14 +75,14 @@ __Note__: It is assumed you are currently operating a full-node running v0.1.2 o
   curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/0.2.0/genesis.json > ~/.terp/config/genesis.json
   ```
 
-6. Start terpd and confirm stops on blockheght udpdate, if you removed .terp you gona see a lot of errors tring to match headers of blocks with version 0.2.0. 
+6. Start terpd and confirm stops on blockheight udpdate, if you removed .terp you are going to see a lot of errors tring to match headers of blocks with version 0.2.0. 
    Because of this is extremly important backup your validator files included .terp to restore at 0.1.2. 
 
   ```bash
   terpd start
   ```
 
-6. When you confirmed you are on 0.2.0 at blockehigt update we can continue with last step of upgrade, skip-upgrade.
+6. When you confirmed you are on 0.2.0 at blockheight update we can continue with last step of upgrade, skip-upgrade.
 
   ```bash
   terpd start --unsafe-skip-upgrades 1497396

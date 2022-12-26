@@ -77,7 +77,7 @@ __Note__: It is assumed you are currently operating a full-node running v0.1.2 o
    Because of this is extremly important backup your validator files included .terp to restore at 0.1.2. 
 
   ```bash
-  terpd tendermint unsafe-reset-all
+  terpd tendermint unsafe-reset-all --home $HOME/.terp --keep-addr-book
   terpd start
   ```
 

@@ -73,16 +73,12 @@ __Note__: It is assumed you are currently operating a full-node running v0.1.2 o
   curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/0.2.0/genesis-patch.json > ~/.terp/config/genesis.json
   ```
 
-6. Start terpd and confirm stops on blockheght udpdate, if you removed .terp you gona see a lot of errors tring to match headers of blocks with version 0.2.0. 
+6. Unsafe reset and Start terpd.
    Because of this is extremly important backup your validator files included .terp to restore at 0.1.2. 
 
   ```bash
+  terpd tendermint unsafe-reset-all
   terpd start
   ```
 
-6. When you confirmed you are on 0.2.0 at blockeheight update we can continue with last step of upgrade, skip-upgrade.
-
-  ```bash
-  terpd start --unsafe-skip-upgrades 1497396
-  ```
 <!-- markdown-link-check-enable -->

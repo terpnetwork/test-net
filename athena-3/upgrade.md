@@ -61,7 +61,11 @@ __Note__: It is assumed you are currently operating a full-node running v0.1.2 o
 
    ```bash
    terpd version
-   0.2.0
+   ```
+   
+   ```bash
+   version: 0.2.0-3-g2b8926a
+   commit: 2b8926aeee2bf6bd2e4c00fd8d2fe945d078fb61
    ```
 
 5. Download Genesis file for 0.2.0

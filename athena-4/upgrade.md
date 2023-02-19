@@ -28,50 +28,57 @@ __Note__: It is assumed you are currently operating a node running on athena-3.
 
 - The upgrade height if agreed upon by governance: `782686` [go playground link](https://go.dev/play/p/u8UNNS9uOx0)
 
-1. Verify you are currently running the correct version ( ) of the Terp-Core:
 
 ```bash
 terpd version
 ```
-2. Stop your service when reached `782686`:
+### 1. Stop your service when reached `782686`:
 ```bash
 terpd stop
 or
 systemctl stop terpd.service
 ```
-3. Upgrade binary to v0.4.0
+### 1.1 (Optional) backup your ~/.terp folder. 
+### 2. Upgrade binary to v0.4.0
 
 ```bash
-cd terp-core && git checkout main
+cd terp-core 
+git fetch --all 
+git checkout v0.4.0
 make install
 ```
  __NOTE__: If running checkout does not work; remove terp-core, download it again and repeat step 3(Only terp-core not .terp).
 ```bash
 rm -r terp-core
-git clone https://github.com/terpnetwork/terp-core
+git clone -b hard-nett/v0.4.0 https://github.com/terpnetwork/terp-core
 ```
       
-4. Verify you are currently running the correct version (v0.4.0) of the Terp-Core:
+### 3. Verify you are currently running the correct version (v0.4.0) of the Terp-Core:
 ```bash
-terpd version
+terpd version --long 
 ```
-
+the output should be
       
 ```bash
-version: TBD
-commit: TBD
+name: terpnetwork
+server_name: terpd
+version: 0.4.0 
+commit: cc8513a6cad512e5d3c54cfa0e710dfa010ab98f
+build_tags: netgo,ledger 
+go: go version go1.19.2 linux/amd64 
 ```
-5. Download Genesis file for v0.4.0
+### 4. Download Genesis file for v0.4.0
 ```bash
 curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-4/genesis.json > ~/.terp/config/genesis.json
 ```
-### 5-a. Validate sha256sum of genesis 
+### 4.1 Validate sha256sum of genesis (TBD)
 ```bash 
-sha256sum ~/.terp/config/genesis.json  \
+sha256sum ~/.terp/config/genesis.json  
 ```
 should return for **athena-4** genesis:
  ```TBD```
-6. Unsafe reset and Start terpd.
+ 
+### 5. Unsafe reset and Start terpd.
 ```bash
 terpd tendermint unsafe-reset-all --home $HOME/.terp --keep-addr-book
 terpd start

@@ -76,7 +76,7 @@ curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-4/
 sha256sum ~/.terp/config/genesis.json  
 ```
 should return for **athena-4** genesis:
- ```TBD```
+ ```c181e312eb6f349ac2921ad4250a588f3323ecf1b30c8b3455ce075d43107916  /home/athena-3/.terp/config/genesis.json```
  
 ### 5. Unsafe reset and Start terpd.
 ```bash

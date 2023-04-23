@@ -20,7 +20,7 @@ must take in order to upgrade from `athena-4`to `90u-1`.
 
 __Note__: It is assumed you are currently operating a node running on athena-4.
 
-- The upgrade height if agreed upon by governance: `296737` [go playground link](https://go.dev/play/p/u8UNNS9uOx0)
+- The upgrade height if agreed upon by governance: `296737` [go playground link](https://go.dev/play/p/7WoZELaWaj1)
 
 
 ```bash

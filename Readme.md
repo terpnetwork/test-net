@@ -12,7 +12,7 @@
 | [athena-2](./athena-2) | *testnet* | Ended   | `v0.1.1`     | Past testnet  |
 | [athena-3](./athena-3) | *testnet* | Ended   | `v0.3.0`     | Past testnet  |
 | [athena-4](./athena-4) | *testnet* | Active  | `v0.4.0`     | Current testnet  |
-| [90u-1](./90u-1)       | *testnet* | Active  | `v1.0.1`     | Upcoming testnet  |
+| [90u-1](./90u-1)       | *testnet* | Upcoming| `v1.0.1`     | Upcoming testnet  |
 
 ## Testnets
 

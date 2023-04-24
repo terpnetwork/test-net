@@ -8,7 +8,7 @@ The following document describes the necessary steps involved that full-node ope
 must take in order to upgrade from `athena-4`to `90u-1`. 
 
 ## Steps Took To Generate Valid Genesis File
-- exported state @ upgrade height `296737`
+- exported state @ upgrade height `1037222`
 - Addition of `terp-core v1.0.1` genesis state params:
 ```json
 {
@@ -20,13 +20,13 @@ must take in order to upgrade from `athena-4`to `90u-1`.
 
 __Note__: It is assumed you are currently operating a node running on athena-4.
 
-- The upgrade height if agreed upon by governance: `296737` [go playground link](https://go.dev/play/p/7WoZELaWaj1)
+- The upgrade height if agreed upon by governance: `1037222` [go playground link](https://go.dev/play/p/LaNphVrg2mB)
 
 
 ```bash
 terpd version
 ```
-### 1. Stop your service when reached `296737`:
+### 1. Stop your service when reached `1037222`:
 ```bash
 terpd stop
 or

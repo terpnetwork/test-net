@@ -12,6 +12,7 @@
 | [athena-2](./testnets/athena-2) | *testnet* | Ended   | `v0.1.1`     | Past testnet  |
 | [athena-3](./testnets/athena-3) | *testnet* | Ended   | `v0.3.0`     | Past testnet  |
 | [athena-4](./testnets/athena-4) | *testnet* | Active  | `v0.4.0`     | Current testnet  |
+| [90u-1](./testnets/90u-1)       | *testnet* | Active  | `v1.0.1`     | Upcoming testnet  |
 
 ## Testnets
 
@@ -19,7 +20,7 @@
 
 | Chain ID         | `athena-4`                                                                   |
 |------------------|---------------------------------------------------------------------------------|
-| Osmosisd version | `v0.4.0`                                                                        |
+| Terpd version | `v0.4.0`                                                                        |
 | Genesis          | <https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-4/genesis.json> |
 | RPC              | <https://rpc-t.terp.nodestake.top>                                              |
 | gRPC             | <https://grpc-t.terp.nodestake.top>                                             |

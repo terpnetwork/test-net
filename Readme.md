@@ -20,7 +20,7 @@
 | Chain ID         | `athena-4`                                                                   |
 |------------------|---------------------------------------------------------------------------------|
 | Osmosisd version | `v0.4.0`                                                                        |
-| Genesis          | <https://raw.githubusercontent.com/hard-nett/test-net/master/athena-4/genesis.json> |
+| Genesis          | <https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-4/genesis.json> |
 | RPC              | <https://rpc-t.terp.nodestake.top>                                              |
 | gRPC             | <https://grpc-t.terp.nodestake.top>                                             |
 | REST             | <https://lcd-t.terp.nodestake.top>                                              |

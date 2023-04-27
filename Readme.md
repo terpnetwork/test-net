@@ -1,138 +1,48 @@
-# Terp Network - athena-2 Testnet
+<div>
+    <h1>   
+       🌌 Terp Network Testnet's
+    </h1>
+    <p> This repository contains information on Terp Netowrks public testnets </p>
 
-This testnet will start at the patched version of Terp-Core (`v0.1.2`). You will need to use the distributed binary from the Terp Network packages repository.
+</div>
 
-**Genesis File**
+| Chain ID                              | Type      | Status | Version       | Notes           |
+|---------------------------------------|-----------|--------|---------------|-----------------|
+| [athena-1](./athena-1) | *testnet* | Ended   | `v0.1.0`     | Past testnet |
+| [athena-2](./athena-2) | *testnet* | Ended   | `v0.1.1`     | Past testnet  |
+| [athena-3](./athena-3) | *testnet* | Ended   | `v0.3.0`     | Past testnet  |
+| [athena-4](./athena-4) | *testnet* | Active  | `v0.4.0`     | Current testnet  |
+| [90u-1](./90u-1)       | *testnet* | Upcoming| `v1.0.1`     | Upcoming testnet  |
 
-[Genesis File](https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/genesis.json):
+## Testnets
 
-```bash
-curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/genesis.json > ~/.terp/config/genesis.json
-```
+### 🟪 athena-4
 
-**Genesis sha256**
+| Chain ID         | `athena-4`                                                                   |
+|------------------|---------------------------------------------------------------------------------|
+| Terpd version | `v0.4.0`                                                                        |
+| Genesis          | <https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-4/genesis.json> |
+| RPC              | <https://rpc-t.terp.nodestake.top>                                              |
+| gRPC             | <https://grpc-t.terp.nodestake.top>                                             |
+| REST             | <https://lcd-t.terp.nodestake.top>                                              |
+| Faucet           | TBD                                                  |
+| Frontend         | TBD                                                  |
 
-```bash
-sha256sum ~/.terp/config/genesis.json
-# b2acc7ba63b05f5653578b05fc5322920635b35a19691dbafd41ef6374b1bc9a
-```
-or
-```bash
-jq -S -c -M '' ~/.terp/config/genesis.json | sha256sum
-# 8fe05de88ef9f3eb016ae19a559369fcb0fdf1aa9a27219bb20b26ccc70f8697 
-```
+#### Join the testnet 
 
-**terpd version**
-
-```bash
-$ terpd version --long
-name: Terp Core
-server_name: terpd
-version: v0.1.2
-commit: TBD
-build_tags: netgo muslc, # THIS BIT IS KEY
-```
-
-**Seed nodes**
-
-```
-TBD
-```
-
-**Persistent Peers**
-
-```
-TBD
-```
-
-## Setup
-
-**Prerequisites:** Make sure to have [Golang >=1.19](https://golang.org/).
-
-#### Go setup
-
-You need to ensure your gopath configuration is correct. If the following **'make'** step does not work then you might have to add these lines to your .profile or .zshrc in the users home folder:
-
-```sh
-nano ~/.profile
-```
-
-```
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export GO111MODULE=on
-export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
-```
-
-Source update .profile
-
-```sh
-source .profile
-```
-
-#### Download and verify:
-
-```sh
-# find out where terpd is - will likely be /home/<your-user>/go/bin/terpd
-which terpd
-
-# put new binary there i.e. in path/to/terpd
-wget https://github.com/terpnetwork/terp-core/releases/download/v0.1.2/terp-core -O /home/<your-user>/go/bin/terpd
+Join the testnet following the instructions on the [athena-4 page](./athena-4/README.md).
 
 
+## 🆘 Issues and support
 
-#### Running in production
+If you encounter any issues while joining the Terp network or have questions about the process, please don't hesitate to reach out for support.
 
-**Note, we'll be going through some upgrades for this testnet. Consider using [Cosmovisor](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor) to make your life easier.** Setting up Cosmovisor is covered in the [Terp Network Documentation]().
+- For general questions and community support, join the [Terp Discord](https://discord.gg/AxAuff4BCt) and ask in the `#testnet-discusion` channel.
 
-Download Genesis file when the time is right. Put it in your `/home/<user>/.terp` folder.
+- For technical issues or bugs related to the testnet, submit a detailed issue report on this repository with a clear description of the problem and any relevant error messages or logs.
 
-If you have not installed cosmovisor, create a systemd file for your TerpNet service:
+## 🙋‍♀️ FAQ
 
-```sh
-sudo nano /etc/systemd/system/terpd.service
-```
+**1) Will the `athena-4` be deleted?**
 
-Copy and paste the following and update `<YOUR_USERNAME>` and `<CHAIN_ID>`:
-
-```sh
-Description=Terp-Core daemon
-After=network-online.target
-
-[Service]
-User=<YOUR_USER>
-ExecStart=/home/<YOUR_USERNAME>/go/bin/terpd start
-Restart=on-failure
-RestartSec=3
-LimitNOFILE=4096
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Enable and start the new service:
-
-```sh
-sudo systemctl enable terpd
-sudo systemctl start terpd
-```
-
-Check status:
-
-```sh
-terpd status
-```
-
-Check logs:
-
-```sh
-journalctl -u terpd -f
-```
-
-### Learn more
-
-- [Cosmos Network](https://cosmos.network)
-- [Terp Network Documentation](https://docs.terp.network/)
-
-#### Running in production
-
+Yes, the `athena-4` testnet will be deprecated and eventually deleted in favor of the `90u-1` testnet. 

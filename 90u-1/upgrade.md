@@ -52,11 +52,11 @@ build_tags: netgo,ledger
 ```
 ### 4. Download Genesis file for 90u-1
 ```bash
-curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/90u-1/genesis.json > ~/.terp/config/genesis.json
+curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/90u-1/genesis.json > $HOME/.terp/config/genesis.json
 ```
 ### 4.1 Validate sha256sum of genesis (TBD)
 ```bash 
-sha256sum ~/.terp/config/genesis.json  
+sha256sum $HOME/.terp/config/genesis.json  
 ```
 should return for **90u-1** genesis:
  ```TBD  $HOME/.terp/config/genesis.json```
@@ -68,6 +68,6 @@ terpd tendermint unsafe-reset-all --home $HOME/.terp --keep-addr-book
 
 ### 6. Set min gas fee
 ```
-sed -i 's/minimum-gas-prices = "[^"]*"/minimum-gas-prices = "0.0002uthiol"/' ~/.terp/config/app.toml 
+sed -i 's/minimum-gas-prices = "[^"]*"/minimum-gas-prices = "0.0002uthiol"/' $HOME/.terp/config/app.toml 
 ```
 <!-- markdown-link-check-enable -->

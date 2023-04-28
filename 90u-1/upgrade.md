@@ -1,7 +1,3 @@
----
-title: Terp-Core Upgrade: Testnet 90u-1 -
----
-<!-- markdown-link-check-disable -->
 # Terp-Core Upgrade Instructions
 
 The following document describes the necessary steps involved that full-node operators
@@ -22,9 +18,8 @@ __Note__: It is assumed you are currently operating a node running on athena-4.
 terpd version
 ```
 ### 1. Stop your service when reached `1037222`:
-```bash
-terpd stop
-or
+
+```
 systemctl stop terpd.service
 ```
 ### 1.1 (Optional) backup your ~/.terp folder. 

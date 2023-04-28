@@ -9,12 +9,7 @@ must take in order to upgrade from `athena-4`to `90u-1`.
 
 ## Steps Took To Generate Valid Genesis File
 - exported state @ upgrade height `1037222`
-- Addition of `terp-core v1.0.1` genesis state params:
-```json
-{
-
-}
-```
+- Addition of `terp-core v1.0.1` genesis state params: [90-u genesis file migration](./export-migration.md)
 
 ## Upgrade Procedure
 
@@ -57,7 +52,7 @@ the output should be
 name: terpnetwork
 server_name: terpd
 version: 1.0.1
-commit: TBD
+commit: 9bb91afded0ad182d97e642afddf0a45e0b4c438
 build_tags: netgo,ledger 
 ```
 ### 4. Download Genesis file for 90u-1
@@ -74,6 +69,8 @@ should return for **90u-1** genesis:
 ### 5. Unsafe reset and Start terpd.
 ```bash
 terpd tendermint unsafe-reset-all --home $HOME/.terp --keep-addr-book
-terpd start
 ```
+
+### 6. Set min gas fee
+
 <!-- markdown-link-check-enable -->

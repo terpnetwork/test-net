@@ -67,5 +67,7 @@ terpd tendermint unsafe-reset-all --home $HOME/.terp --keep-addr-book
 ```
 
 ### 6. Set min gas fee
-
+```
+sed -i 's/minimum-gas-prices = "[^"]*"/minimum-gas-prices = "0.0002uthiol"/' ~/.terp/config/app.toml 
+```
 <!-- markdown-link-check-enable -->

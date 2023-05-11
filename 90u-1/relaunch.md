@@ -4,7 +4,7 @@ The following document describes the necessary steps involved that full-node ope
 must take in order to restart their nodes for 90u-1. 
 
 ## Steps Took To Improve Genesis Process
-- New Genesis Time now `2023-05-10T12:00:00Z`
+- New Genesis Time now `2023-05-15T12:00:00Z`
 
 ## Relaunch Procedure
 
@@ -32,7 +32,7 @@ terpd config chain-id 90u-1
 ```
 sha256sum $HOME/.terp/config/genesis.json
 ```
-`9119703c9b10e5f672b34119d9d209a01fd877d72c5e6d26733a0b6427e8a6fa $HOME/.terp/config/genesis.json`
+`25b6ae32eb96bb21f74f70529bd539914cae4a6ffb625c80eebb97de143642d7 $HOME/.terp/config/genesis.json`
 #### Chain-ID
 ```
 terpd config | grep chain-id

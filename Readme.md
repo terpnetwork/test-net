@@ -11,17 +11,17 @@
 | [athena-1](./athena-1) | *testnet* | Ended   | `v0.1.0`     | Past testnet |
 | [athena-2](./athena-2) | *testnet* | Ended   | `v0.1.1`     | Past testnet  |
 | [athena-3](./athena-3) | *testnet* | Ended   | `v0.3.0`     | Past testnet  |
-| [athena-4](./athena-4) | *testnet* | Active  | `v0.4.0`     | Current testnet  |
-| [90u-1](./90u-1)       | *testnet* | Upcoming| `v1.0.1`     | Upcoming testnet  |
+| [athena-4](./athena-4) | *testnet* | Ended  | `v0.4.0`     | Past testnet  |
+| [90u-1](./90u-1)       | *testnet* | Upcoming| `v1.0.1`     | Current testnet  |
 
 ## Testnets
 
-### 🟪 athena-4
+### 🟪 90u-1
 
 | Chain ID         | `athena-4`                                                                   |
 |------------------|---------------------------------------------------------------------------------|
-| Terpd version | `v0.4.0`                                                                        |
-| Genesis          | <https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-4/genesis.json> |
+| Terpd version | `v1.0.1`                                                                        |
+| Genesis          | <https://raw.githubusercontent.com/terpnetwork/test-net/master/90u-1/genesis.json> |
 | RPC              | <https://rpc-t.terp.nodestake.top>                                              |
 | gRPC             | <https://grpc-t.terp.nodestake.top>                                             |
 | REST             | <https://lcd-t.terp.nodestake.top>                                              |
@@ -30,7 +30,7 @@
 
 #### Join the testnet 
 
-Join the testnet following the instructions on the [athena-4 page](./athena-4/README.md).
+Join the testnet following the instructions on the [90u-1 page](./90u-1/README.md).
 
 
 ## 🆘 Issues and support

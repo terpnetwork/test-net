@@ -13,7 +13,7 @@
 | [athena-3](./athena-3) | *testnet* | Ended   | `v0.3.0`     | Past testnet  |
 | [athena-4](./athena-4) | *testnet* | Ended  | `v0.4.0`     | Past testnet  |
 | [90u-1](./90u-1)       | *testnet* | Ended  | `v1.0.1`     | Current testnet  |
-| [90u-2](./90u-2)       | *testnet* | Upcoming| `v1.0.1`     | Upcoming testnet  |
+| [90u-2](./90u-2)       | *testnet* | Upcoming| `barberry`     | Upcoming testnet  |
 
 ## Testnets
 

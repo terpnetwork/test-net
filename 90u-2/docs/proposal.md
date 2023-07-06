@@ -36,7 +36,7 @@ To Download the source file for `terpd`:
 ```bash
 git clone https://github.com/terpnetwork/terp-core.git
 cd terp-core || return
-git checkout v1.0.0-stable
+git checkout barberry
 make install
 ```
 
@@ -100,3 +100,7 @@ cp ~/.terp/config/gentx/gentx*.json ./90u-2/gentx/
 
 The final step is to distribute the finalized genesis file, and have peers connect with each other in preparation of blocks producing on 90u-2
 
+
+
+**BY VOTING YES**, you agree these steps can be used to resume migrating to `90u-2`. \
+**BY VOTING NO**, you do not agree these steps can be used to resume migrating to `90u-2`. 

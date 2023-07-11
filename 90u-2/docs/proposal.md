@@ -5,7 +5,7 @@ The PR containing the details on the 90u-2 test-net upgrade steps can be found h
 
 # Upgrade Timeline
 
-## I. Genesis File Modification [Timeline - 4 Days]
+## I. Genesis File Modification [July 12th - July 15th]
 
 There are two ways to participate as a node operator during the launch of 90u-2. To participate as a validator node requires the participant to have an inital `terpx` balance, but to participate as a full node, seed node, or light client does not. 
 
@@ -21,16 +21,31 @@ This first step allows any new contributors to add a genesis account balance of 
 
 Make sure you have setup your computers local enviroment with the prerequisites needed, dependent on your operating platform (Windows, Linux, MacOS).
 
-*For most linux users, you can copy and paste this script to setup the prerequisites* \
- *(Big-ups to the [Nodejumper Team](https://app.nodejumper.io/)):*
+**Prerequisites:** Make sure to have [Golang >=1.20](https://golang.org/).
+
+#### Go setup
+
+Follow the instructions [here](https://go.dev/doc/install) to install Go.
+
+For an Ubuntu, you can probably use:
 ```
-# install dependencies, if needed
-sudo apt update
-sudo apt install -y curl git jq lz4 build-essential unzip
+wget https://golang.org/dl/go1.20.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.20.5.linux-amd64.tar.gz
+```
 
-bash <(curl -s "https://raw.githubusercontent.com/nodejumper-org/cosmos-scripts/master/utils/go_install.sh")
-source .bash_profile
+Unless you want to configure in a non standard way, then set these in the .profile in the user's home (i.e. ~/) folder.
 
+```
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export GO111MODULE=on
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+```
+
+Source update .profile
+
+```sh
+source .profile
 ```
 To Download the source file for `terpd`:
 ```bash
@@ -61,10 +76,17 @@ This will generate a folder by default located at `~/.terp`. We can now download
 
 To replace the genesis file, we recommend pulling from the forked repo you gereated on step-1:
 
-NOTE: Replace <YOUR_GITHUB_ACCOUNT_HERE> with the username of the github account used to fork the repo.
+NOTE: Replace <YOUR_GITHUB_ACCOUNT> with the username of the github account used to fork the repo.
 ```bash
-curl -s https://raw.githubusercontent.com/<YOUR_GITHUB_ACCOUNT_HERE>/test-net/master/90u-2/prelaunch-genesis.json > $HOME/.terp/config/genesis.json
+curl -s https://raw.githubusercontent.com/<YOUR_GITHUB_ACCOUNT>/test-net/master/90u-2/prelaunch-genesis.json > $HOME/.terp/config/genesis.json
 ```
+
+You can verify the genesis file is the correct version by checking the sha256sum, before following step 5:
+```
+cd test-net/90u-2/data \
+sha256sum prelaunch-genesis.json
+```
+This command should return: `9a4dc95f5a45112b650b529c720a265d39358f2e146547c110353a49e735fff5  prelaunch-genesis.json`. If this is not the correct output, please remove the test-net folder and repeat Step 4. 
 
 ### Step 5: Add Genesis Account 
 
@@ -82,11 +104,15 @@ Once your have added your genesis account added, open up a new PR to include the
 
 To learn more about opening PR's you can learn more [here.](https://opensource.com/article/19/7/create-pull-request-github)
 
-## II. Genesis Transaction Creation [Timeline - 4 Days]
+## II. Genesis Transaction Creation [July 16th - July 19th]
 
 The next step in the timline is to generate gentx's, which are essentially a transaction made by each validator to be a part of the active set when the first block of the network is generated. This can only be done where each gentx signer is signing an identical genesis file. 
 
-
+### Generate gentx file
+Add your account to your local genesis file with a given amount and the key you just created. Use only 1000000uterpx, other amounts will be ignored.
+```
+terpd genesis gentx <key-name> 100000uterpx --chain-id 90u-2 
+```
 ### Copy the generated gentx json file to <repo_path>/90u-2/gentx/
 ```
 cd test-net
@@ -96,7 +122,7 @@ cp ~/.terp/config/gentx/gentx*.json ./90u-2/gentx/
 
 ### Create a PR onto https://github.com/terpnetwork/test-net
 
-### III. Genesis Launch of 90u-2 [Timeline - 48 hours after final Gentx submission]
+## III. Genesis Launch of 90u-2 [July 21st]
 
 The final step is to distribute the finalized genesis file, and have peers connect with each other in preparation of blocks producing on 90u-2
 

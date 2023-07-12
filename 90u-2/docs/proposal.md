@@ -55,6 +55,13 @@ git checkout barberry
 make install
 ```
 
+You can verify the terpd correct version by checking this info:
+```
+name: terp
+server_name: terpd
+version: barberry
+commit: d70c39066afda3800080a85a66ad018b63b4929c
+```
 ### Step 3: Import or generate new keyring
 To import a mnemonic that already exist:
 ```bash

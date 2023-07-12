@@ -12,25 +12,26 @@
 | [athena-2](./athena-2) | *testnet* | Ended   | `v0.1.1`     | Past testnet  |
 | [athena-3](./athena-3) | *testnet* | Ended   | `v0.3.0`     | Past testnet  |
 | [athena-4](./athena-4) | *testnet* | Ended  | `v0.4.0`     | Past testnet  |
-| [90u-1](./90u-1)       | *testnet* | Upcoming| `v1.0.1`     | Current testnet  |
+| [90u-1](./90u-1)       | *testnet* | Ended  | `v1.0.1`     | Current testnet  |
+| [90u-2](./90u-2)       | *testnet* | Upcoming| `barberry`     | Upcoming testnet  |
 
 ## Testnets
 
-### 🟪 90u-1
+### 🟪 90u-2
 
-| Chain ID         | `athena-4`                                                                   |
+| Chain ID         | `90u-2`                                                                   |
 |------------------|---------------------------------------------------------------------------------|
-| Terpd version | `v1.0.1`                                                                        |
-| Genesis          | <https://raw.githubusercontent.com/terpnetwork/test-net/master/90u-1/genesis.json> |
-| RPC              | <https://rpc-t.terp.nodestake.top>                                              |
-| gRPC             | <https://grpc-t.terp.nodestake.top>                                             |
-| REST             | <https://lcd-t.terp.nodestake.top>                                              |
+| Terpd version | `barberry`                                                                        |
+| Genesis          | TBD                                                  |
+| RPC              | TBD                                                  |
+| gRPC             | TBD                                                  |
+| REST             | TBD                                                  |
 | Faucet           | TBD                                                  |
 | Frontend         | TBD                                                  |
 
 #### Join the testnet 
 
-Join the testnet following the instructions on the [90u-1 page](./90u-1/README.md).
+Join the testnet following the instructions on the [90u-2 page](./90u-2/README.md).
 
 
 ## 🆘 Issues and support
@@ -45,4 +46,4 @@ If you encounter any issues while joining the Terp network or have questions abo
 
 **1) Will the `athena-4` be deleted?**
 
-Yes, the `athena-4` testnet will be deprecated and eventually deleted in favor of the `90u-1` testnet. 
+Yes, the `athena-4` testnet will be deprecated and eventually deleted in favor of the `90u-2` testnet. 

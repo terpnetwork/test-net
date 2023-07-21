@@ -26,6 +26,18 @@ If the consensus is to **accept** the proposed details, they can be used as a gu
 
 Node setup instructions, & Peer endpoints can be available for anyone to participate in the relaunch of the test network in  [Terp Network's Chain-Registry Fork](https://github.com/terpnetwork/chain-registry).
 
+## Genesis File 
+To download the genesis file to your initalized node:
+```
+curl -s https://raw.githubusercontent.com/terpnetwork/test-net/master/90u-2/genesis.json > $HOME/.terp/config/genesis.json
+```
+#### Checking validity of genesis file
+To verify the authenticity of the genesis file:
+```
+sha256sum $HOME/.terp/config/genesis.json 
+```
+should return `5e7bc1d51e1a12318ed49ba90b03f76680af8d8ccc4f113b8179860849941a05`
+
 ## P2P info
 
 ### Seed node

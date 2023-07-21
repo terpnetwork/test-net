@@ -25,3 +25,48 @@ If the consensus is to **accept** the proposed details, they can be used as a gu
 ### III. Network Launch
 
 Node setup instructions, & Peer endpoints can be available for anyone to participate in the relaunch of the test network in  [Terp Network's Chain-Registry Fork](https://github.com/terpnetwork/chain-registry).
+
+## Genesis File 
+To download the genesis file to your initalized node:
+```
+curl -s https://raw.githubusercontent.com/terpnetwork/test-net/master/90u-2/genesis.json > $HOME/.terp/config/genesis.json
+```
+#### Checking validity of genesis file
+To verify the authenticity of the genesis file:
+```
+sha256sum $HOME/.terp/config/genesis.json 
+```
+should return `5e7bc1d51e1a12318ed49ba90b03f76680af8d8ccc4f113b8179860849941a05`
+
+## P2P info
+
+### Seed node
+
+#### create a shell variable for the seeds 
+```
+export SEEDS="74d89379b11badacff139e57b553202072a162c1@173.230.130.51:26656"
+```
+#### check that the shell variable is set up properly
+```
+echo $SEEDS
+```
+
+#### add seed to config.toml
+```
+sed -i.bak -e "s/^seeds *=.*/seeds = \"$SEEDS\"/" ~/.terp/config/config.toml
+```
+
+### Persistent Peers
+
+#### create a shell variable for the persistent peers
+```
+export PEERS="3e5e25f10a7bf3467fcb24ed59124b5e00ab3d0b@136.243.136.241:32656,79ba637ef59c94ba41c870806903b4e907594f32@65.109.174.30:26656"
+```
+#### check that the shell variable is set up properly
+```
+echo $PEERS
+```
+#### add peers to config.toml
+```
+sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ~/.terp/config/config.toml
+```

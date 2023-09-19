@@ -35,7 +35,7 @@ sudo tar -C /usr/local -xzf go1.20.5.linux-amd64.tar.gz
 
 Unless you want to configure in a non standard way, then set these in the .profile in the user's home (i.e. ~/) folder.
 
-```
+```bash
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export GO111MODULE=on
@@ -89,7 +89,7 @@ curl -s https://raw.githubusercontent.com/<YOUR_GITHUB_ACCOUNT>/test-net/master/
 ```
 
 You can verify the genesis file is the correct version by checking the sha256sum, before following step 5:
-```
+```bash
 cd test-net/90u-2/data \
 sha256sum prelaunch-genesis.json
 ```
@@ -117,11 +117,11 @@ The next step in the timline is to generate gentx's, which are essentially a tra
 
 ### Generate gentx file
 Add your account to your local genesis file with a given amount and the key you just created. Use only 1000000uterpx, other amounts will be ignored.
-```
-terpd genesis gentx <key-name> 100000uterpx --chain-id 90u-2 
+```bash
+terpd genesis gentx <key-name> 1000000uterpx --chain-id 90u-2 
 ```
 ### Copy the generated gentx json file to <repo_path>/90u-2/gentx/
-```
+```bash
 cd test-net
 cp ~/.terp/config/gentx/gentx*.json ./90u-2/gentx/
 ```

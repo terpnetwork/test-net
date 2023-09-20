@@ -30,5 +30,5 @@ $DAEMON_HOME/cosmovisor/upgrades/v2/bin/terpd version
 rm -rf terpd_linux_amd64.tar.gz # delete if exists
 wget https://github.com/terpnetwork/terp-core/releases/download/v2.0.0/terpd-v2.0.0-linux-amd64.tar.gz
 sha256sum terpd_linux_amd64.tar.gz 
-# Output 832b8907aa5977c1dd07ec31f54ec3c46e6998222dd3e28ea588c011b99a5dcc
+# Output d99c709d6f27cbc670cded20cb55a4a26d82034e531a743c121d6f221d0ea9fb
 ```

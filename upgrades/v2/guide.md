@@ -17,8 +17,8 @@ git fetch --tags && git checkout v2.0.0
 make build && make install 
 
 terpd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
-# commit: abaa4aea743ed104ae6009d62d034bd2a3bc4b93
-# cosmos_sdk_version: v0.47.3
+# commit: 4fbf792d554594fb4ed7a9927424fb6f379fc293
+# cosmos_sdk_version: v0.47.4
 # version: 2.0.0
 
 mkdir -P $DAEMON_HOME/cosmovisor/upgrades/v2/bin && cp $HOME/go/bin/terpd $DAEMON_HOME/cosmovisor/upgrades/v2/bin 

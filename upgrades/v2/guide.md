@@ -4,11 +4,11 @@
 |-----------------|--------------------------------------------------------------|
 | Chain-id        | `90u-2`                                                |
 | Upgrade Version | `v2.0.0`                                        |
-| Upgrade Height  | 807514                                                      |
+| Upgrade Height  | 888981                                                       |
 
 
 
-The target block for this upgrade is 807514, which is expected to arrive at 11:00UTC Friday, September 22nd.. [Go Playground](https://go.dev/play/p/QBqPjGz2xpO)
+The target block for this upgrade is 888981, which is expected to arrive at Friday, September 27nd.. [Countdown](https://testnet.itrocket.net/terp/block/888981)
 
 ### Building Manually:
 ```

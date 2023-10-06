@@ -8,7 +8,7 @@
 
 
 
-The target block for this upgrade is `1084072`, which is expected to arrive at 11:00UTC Wednesday, October 11th.. [Go Playground](https://go.dev/play/p/ZM8NGcIgECZ)
+The target block for this upgrade is `1084072`, which is expected to arrive at 11:00UTC Wednesday, October 11th.. [Go Playground](https://go.dev/play/p/tdWDz0DKgTx)
 
 ### Building Manually:
 ```

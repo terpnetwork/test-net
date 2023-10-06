@@ -12,8 +12,8 @@
 | [athena-2](./athena-2) | *testnet* | Ended   | `v0.1.1`     | Past testnet  |
 | [athena-3](./athena-3) | *testnet* | Ended   | `v0.3.0`     | Past testnet  |
 | [athena-4](./athena-4) | *testnet* | Ended  | `v0.4.0`     | Past testnet  |
-| [90u-1](./90u-1)       | *testnet* | Ended  | `v1.0.1`     | Current testnet  |
-| [90u-2](./90u-2)       | *testnet* | Upcoming| `barberry`     | Upcoming testnet  |
+| [90u-1](./90u-1)       | *testnet* | Ended  | `v1.0.1`     | Past testnet  |
+| [90u-2](./90u-2)       | *testnet* | Upcoming| `v2.0.0`     | Current testnet  |
 
 ## Testnets
 
@@ -21,11 +21,11 @@
 
 | Chain ID         | `90u-2`                                                                   |
 |------------------|---------------------------------------------------------------------------------|
-| Terpd version | `barberry`                                                                        |
-| Genesis          | TBD                                                  |
-| RPC              | TBD                                                  |
+| Terpd version | `v2.0.0 `                                                                        |
+| Genesis          | [link](https://raw.githubusercontent.com/terpnetwork/test-net/master/90u-2/genesis.json)                                                  |
+| RPC              | [ITRocket](https://terp-testnet-api.itrocket.net)                                                  |
 | gRPC             | TBD                                                  |
-| REST             | TBD                                                  |
+| REST             | [ITRocket](https://terp-testnet-api.itrocket.net)                                                  |
 | Faucet           | TBD                                                  |
 | Frontend         | TBD                                                  |
 
